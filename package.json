@@ -16,7 +16,8 @@
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "uglify-es": "^3.3.9"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
