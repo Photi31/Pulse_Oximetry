@@ -1,7 +1,7 @@
 .consultation {
     min-height: 680px;
     background: url(../img/bg2.jpg) center (center/cover) no-repeat;
-    padding: 100px 0 90px 0;
+    padding: 100px 30px 90px 30px;
     &__descr {
         font-weight: 300;
         font-size: 20px;
@@ -9,4 +9,38 @@
         color: #ffffff;
 
     }    
+}
+
+@media (max-width: 768px) {
+    .consultation {
+        min-height: 560px;
+        padding: 50px 20px 50px 20px;
+        &__descr {
+            font-size: 22px;
+            margin-top: 20px;
+        }    
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation {
+        min-height: 350px;
+        padding: 35px 20px 35px 20px;
+        &__descr {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .consultation {
+        min-height: 295px;
+        padding: 15px;
+        &__descr {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
 }

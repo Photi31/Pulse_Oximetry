@@ -13,3 +13,43 @@
         text-align: left;        
     }
 }
+
+@media (max-width: 768px) {
+    .title {
+        &_left {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &_dark {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        &_left {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &_dark {
+            font-size: 25px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        &_left {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &_dark {
+            font-size: 18px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+    }
+}

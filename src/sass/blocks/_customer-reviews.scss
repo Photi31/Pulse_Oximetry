@@ -44,3 +44,91 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .review {
+        padding: 0 20px;
+        &-block {
+            &__img {
+                margin-right: 25px;
+            }
+            &__descr {
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        &-block {
+            margin-top: 40px;
+            &__img {
+                width: 150px;
+                height: 150px;
+            }
+            &__descr {
+                width: 500px;
+            }
+            &__text {
+                font-size: 15px;
+                line-height: 20px;
+                br {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .review {
+        &-block {
+            &__subname {
+                font-size: 10px;
+                line-height: 15px;
+                margin-bottom: 8px;
+            }
+            &__text {
+                font-size: 12px;
+                line-height: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .customer-reviews {
+        margin-bottom: 20px;
+    }
+    .review {
+        padding: 0 10px;
+        &-block {
+            margin-top: 20px;
+            &__descr {
+                width: 200px;
+            }
+            &__img {
+                width: 90px;
+                height: 90px;
+                margin: 0;
+                margin-right: 10px;
+            }
+            &__name {
+                font-size: 15px;
+                line-height: 15px;
+            }
+            &__subname {
+                font-size: 8px;
+                margin-bottom: 5px;
+            }
+            &__text {
+                font-size: 9px;
+                line-height: 9px;
+                br {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

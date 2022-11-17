@@ -63,7 +63,7 @@
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
-            transition: 0.5s all;
+            transition: 0.2s all;
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;
@@ -77,7 +77,7 @@
             padding-left: 19px;
             list-style-type: none;
             transform: translateX(0%);
-            transition: 0.5s all;
+            transition: 0.2s all;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0;
@@ -129,6 +129,7 @@
             text-align: center;
             text-decoration-line: underline;
             color: $main-color;
+            cursor: pointer;
             &:hover {
                 color: $main-color;
             }
@@ -167,12 +168,141 @@
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
+            cursor: pointer;
             &_active {
                 display: block;
             }
             &:hover {
                 color: $main-color;
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        margin-bottom: 30px;
+        padding: 10px;
+        &__tabs {
+            margin-top: 30px;
+            justify-content: center;      
+        }
+        &__tab {
+            width: 30%;
+            height: 50px;
+        }
+        &__content {
+            margin-top: 30px;
+            justify-content: center;
+        }
+        &-item {
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .catalog {
+        &__tabs {
+            margin-top: 25px;
+        }
+        &__tab {
+            margin: 0 8px;
+            height: 30px;
+            width: 140px;
+            border: 1px solid #d0d0d0;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        &__content {
+            margin-top: 20px;
+            justify-content: center;
+        }
+        &-item {
+            margin: 10px;
+            width: 200px;
+            min-height: 283px;
+            padding: 0px;
+            hr {
+                margin: 10px 0;
+            }
+            &__img {
+                height: 130px;
+            }
+            &__subtitle {
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 11px;
+                line-height: 14px;
+            }
+            &__link {
+                font-size: 11px;
+            }
+            &__list {
+                padding-left: 15px;
+                padding-right: 21px;
+                li {
+                    margin-bottom: 12px;
+                    font-size: 11px;
+                    line-height: 14px;
+                    &::before {
+                        width: 4px;
+                        height: 4px;
+                        left: -10px;
+                        top: 5px;
+                    }
+                }
+            }
+            &__back {
+                bottom: 62px;
+                left: 50%;
+                transform: translateX(calc(-50% - 1px));
+                font-size: 11px;
+            }
+            &__old-price {
+                margin-top: 0px;
+                font-size: 10px;
+                line-height: 10px;
+                padding-left: 5px;
+            }
+            &__price {
+                margin-top: 5px;
+                font-size: 13px;
+                line-height: 13px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .catalog {
+        margin-bottom: 20px;
+        padding: 10px;
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            margin: 0 5px;
+            height: 20px;
+            width: 90px;
+            font-size: 9px;
+            line-height: 19px;
         }
     }
 }

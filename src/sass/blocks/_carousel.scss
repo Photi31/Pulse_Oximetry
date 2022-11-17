@@ -13,10 +13,10 @@
         transform: translateY(-50%);
         cursor: pointer;
         &__prev {
-            left: 0px;
+            left: 20px;
         }
         &__next {
-            right: 0px;
+            right: 20px;
         }
         img {
             width: 100%;
@@ -42,5 +42,67 @@
     }
     &_slide[data-active] {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel {
+        width: 760px;
+        height: 540px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 460px;
+        width: 100%;
+        &_button {
+            &__prev {
+                left: 30px;
+            }
+            &__next {
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        height: 360px;
+        width: 100%;
+        &_slide {
+            margin: 60px;
+        }
+        &_button {
+            width: 35px;
+            &__prev {
+                left: 10px;
+            }
+            &__next {
+                right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel {
+        width: 100%;
+        &_slide {
+            margin: 40px;
+        }
+        &_button {
+            width: 25px;
+            &__prev {
+                left: 10px;
+            }
+            &__next {
+                right: 10px;
+            }
+        }
+        &_slide {
+            margin: 0px 75px;
+        }
     }
 }

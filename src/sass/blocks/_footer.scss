@@ -1,12 +1,8 @@
 .footer {
     position: relative;
-    &-map {
-        min-height: 630px;
-        background: url(../../img/map.jpg) center (center/cover) no-repeat;
-        position: relative;
-    }
+    height: 630px;
     
-    &-contacts {
+    &-info {
         position: absolute;
         width: 470px;
         height: 270px;
@@ -34,13 +30,13 @@
                 color: #FFFFFF;    
             }
         }
-        &__networks {
+        &__social {
             margin: 0 auto;
             display: flex;
             width: 220px;
             justify-content: space-between;
             margin-top: 36px;
-            div {
+            a {
                 width: 52px;
                 height: 52px;
                 border: 2px solid #FFFFFF;
@@ -58,5 +54,129 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .footer {
+        height: 530px;
+        &-info {
+            height: 230px;
+            width: 430px;
+            &__adres {
+                margin-top: 40px;
+                font-size: 22px;
+                line-height: 20px;
+            }
+            &__tel {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            &__social {
+                margin-top: 28px;
+            }
+        }
+        iframe {
+            height: 530px;
+        }
+    }
+}
 
+@media (max-width: 768px) {
+    .footer {
+        height: 450px;
+        &-info {
+            height: 185px;
+            width: 330px;
+            &__adres {
+                margin-top: 25px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+            &__tel {
+                margin-top: 20px;
+                font-size: 17px;
+            }
+            &__social {
+                margin-top: 28px;
+                a {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            &__network {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        iframe {
+            height: 450px;
+        }
+    }
+}
 
+@media (max-width: 576px) {
+    .footer {
+        height: 300px;
+        &-info {
+            height: 100px;
+            width: 225px;
+            &__adres {
+                margin-top: 10px;
+                font-size: 13px;
+                line-height: 13px;
+            }
+            &__tel {
+                margin-top: 7px;
+                font-size: 12px;
+            }
+            &__social {
+                margin-top: 10px;
+                width: 120px;
+                a {
+                    border: 1px solid #fff;
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+            &__network {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        iframe {
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        height: 165px;
+        &-info {
+            height: 65px;
+            width: 150px;
+            &__adres {
+                margin-top: 5px;
+                font-size: 9px;
+                line-height: 9px;
+            }
+            &__tel {
+                margin-top: 0;
+                font-size: 8px;
+            }
+            &__social {
+                margin-top: 5px;
+                width: 110px;
+                a {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &__network {
+                width: 10px;
+                height: 9px;
+            }
+        }
+        iframe {
+            height: 165px;
+        }
+    }
+}

@@ -2,10 +2,33 @@
 *{
     font-family: "Museo Sans Cyrl", sans-serif;
 }
-.container{
+
+.container {
     max-width: 950px;
     margin: 0 auto;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 830px;
+}}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+}}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+}}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 100%;
+}}
+
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -17,3 +40,4 @@
 @import 'blocks/catalog';
 @import 'blocks/customer-reviews';
 @import 'blocks/footer';
+@import 'blocks/modal';

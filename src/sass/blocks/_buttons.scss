@@ -26,3 +26,60 @@
         height: 44px;
     }
 }
+
+@media (max-width: 768px) {
+    .button {
+        font-size: 13px;
+        &_main {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .button {
+        width: 110px;
+        height: 21px;
+        font-size: 10px;
+        &_main {
+            width: 220px;
+            height: 35px;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+        &_submit {
+            width: 100%;
+            height: 25px;
+            font-size: 10px;
+        }
+        &_mini {
+            width: 70px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .button {
+        width: 110px;
+        height: 19px;
+        font-size: 9px;
+        &_main {
+            width: 200px;
+            height: 30px;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+        &_submit {
+            width: 100%;
+            height: 25px;
+            font-size: 10px;
+        }
+        &_mini {
+            width: 80px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
