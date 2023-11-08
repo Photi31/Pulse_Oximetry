@@ -7,6 +7,13 @@ const autoprefixer   = require('gulp-autoprefixer');
 const rename         = require("gulp-rename");
 const concat         = require('gulp-concat');
 const uglify         = require('gulp-uglify-es').default;
+const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 function browsersync() {
     browserSync.init({

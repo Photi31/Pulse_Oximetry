@@ -42,7 +42,6 @@ function activeTab() {
 function activeTabContent(tabName) {
     
     tabContentItem.forEach(function(item) {
-       // console.log(item);
         item.classList.contains(tabName) ? item.classList.add('catalog__content_active') : item.classList.remove('catalog__content_active');
     })
 }

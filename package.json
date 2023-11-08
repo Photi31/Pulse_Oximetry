@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://Photu31.github.io/Pulse_Oximetry",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,7 @@
     "sass": "^1.54.9"
   },
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "normalize.css": "^8.0.1"
   },
   "browserslist": [
